@@ -13,3 +13,71 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background-color: #f5f5f5;
 }
+
+header.header {
+  background-color: #F7146B;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+a {
+  color: white;
+  list-style: none;
+  text-decoration: none;
+}
+
+form {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.add-form {
+  background-color: #F7146B;
+  color: white;
+  border: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 10px;
+  height: 2.5rem;
+}
+
+input {
+  height: 2.5rem;
+  width: 12rem;
+  border-radius: 10px;
+  border: 0;
+  padding: 1rem;
+  border: 1px solid rgba(128, 128, 128, 0.346);
+}
+
+.emoji {
+  margin-bottom: 0;
+  width: 100px;
+  height: auto;
+  font-size: 2rem;
+}
+
+.countryName {
+  margin-top: 0;
+}
+
+.ul-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  justify-content: center;
+}
+
+ul {
+  padding: 0;
+}

@@ -26,7 +26,7 @@ function CountryForm() {
         name: '',
         code: '',
         emoji: '',
-        continentId: '', // Nouveau champ pour stocker l'ID du continent sélectionné
+        continentId: '',
     });
 
     const { loading, error, data } = useQuery(GET_ALL_CONTINENTS);
@@ -95,7 +95,7 @@ function CountryForm() {
             <input type="text" name="code" placeholder="Code" value={formData.code} onChange={handleChange} />
             <input type="text" name="emoji" placeholder="Emoji" value={formData.emoji} onChange={handleChange} />
             <select name="continentId" value={formData.continentId} onChange={handleChange}>
-                <option value="">Sélectionnez un continent</option>
+                <option value="">Continent</option>
                 {data.continents.map(continent => (
                     <option key={continent.id} value={continent.id}>{continent.name}</option>
                 ))}

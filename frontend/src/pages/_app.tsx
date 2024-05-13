@@ -6,7 +6,7 @@ import Header from "../components/Header";
 
 
 const client = new ApolloClient({
-  uri: 'http://localhost:4000/graphql', // Remplacez cela par l'URL de votre serveur Apollo
+  uri: 'http://localhost:4000/graphql',
   cache: new InMemoryCache()
 });
 

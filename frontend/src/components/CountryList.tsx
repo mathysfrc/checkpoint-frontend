@@ -1,7 +1,7 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
 import { gql } from '@apollo/client';
-import Link from 'next/link'; // Importer Link depuis next/link
+import Link from 'next/link';
 
 const GET_ALL_COUNTRIES = gql`
   query GetAllCountries {

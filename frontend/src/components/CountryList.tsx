@@ -2,6 +2,7 @@ import React from 'react';
 import { useQuery } from '@apollo/client';
 import { gql } from '@apollo/client';
 
+
 const GET_ALL_COUNTRIES = gql`
   query GetAllCountries {
     countries {
@@ -22,8 +23,8 @@ function CountryList() {
             <ul className='ul-list'>
                 {data.countries.map((country, index) => (
                     <li key={index}>
-                        <p className='emoji'>{country.emoji}</p>
                         <p className='countryName'>{country.name}</p>
+                        <p className='emoji'>{country.emoji}</p>
                     </li>
                 ))}
             </ul>

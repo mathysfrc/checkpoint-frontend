@@ -50,6 +50,13 @@ form {
   height: 2.5rem;
 }
 
+li {
+  background-color: rgba(128, 128, 128, 0.078);
+  ;
+  margin: 0.5rem;
+  border-radius: 10px;
+}
+
 input {
   height: 2.5rem;
   width: 12rem;
@@ -60,14 +67,20 @@ input {
 }
 
 .emoji {
-  margin-bottom: 0;
+  margin-top: 0;
   width: 100px;
   height: auto;
   font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
 }
 
 .countryName {
-  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  color: black !important;
 }
 
 .ul-list {
@@ -80,4 +93,10 @@ input {
 
 ul {
   padding: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  form {
+    display: grid;
+  }
 }
